@@ -21,6 +21,10 @@ class Array2D
         // Accessors
         const double& operator()(size_t i, size_t j) const;
         double& operator()(size_t i, size_t j);
+
+        // Getters
+        size_t get_ni() const { return ni; }
+        size_t get_nj() const { return nj; }
 };
 
 } // namespace
