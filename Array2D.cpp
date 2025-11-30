@@ -25,6 +25,11 @@ Array2D::Array2D(const std::string& filename)
 }
 
 
+const double& Array2D::operator()(size_t i, size_t j) const
+{
+    return values[i*nj + j];
+}
+
 double& Array2D::operator()(size_t i, size_t j)
 {
     return values[i*nj + j];

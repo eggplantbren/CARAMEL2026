@@ -18,7 +18,8 @@ class Array2D
         Array2D(size_t ni, size_t nj);
         Array2D(const std::string& filename);
 
-
+        // Accessors
+        const double& operator()(size_t i, size_t j) const;
         double& operator()(size_t i, size_t j);
 };
 
